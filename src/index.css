@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-charcoal text-slate-100 font-sans antialiased;
+}
+
+* {
+  @apply selection:bg-ember-500 selection:text-white;
+}
+
+a {
+  @apply text-ember-400 hover:text-ember-300 transition-colors;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff3347 0%, #b91328 100%);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f11;
+}
